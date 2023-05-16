@@ -164,34 +164,35 @@ border-radius: 3px;
         height: 7%;
     }
     .head{
-        font-size: 18px;
+        font-size: 22px;
         margin: 0px 10px;
     }
     .sub{
-        width: 97%;
+        width: 95%;
     }
     .subhead{
         font-size: 12px;
+        margin: 0px 20px;
     }
     .slider{
-        width: 150px;
+        width: 230px;
     }
     .grade{
-        width: 50px;
-        font-size: 12px;
-        margin-right: 10px;
-        padding: 0px;
+        width: 55px;
+        font-size: 16px;
+        margin-right: 20px;
+        padding: 5px;
 
     }
     .sharebtn{
-        font-size: 12px;
-        margin: 0 10px;
+        font-size: 10px;
+        margin: 0 20px;
     }
     .rangevalue{
-        font-size: 12px;
-        padding-left: 10px;
+        font-size: 16px;
+        padding-left: 15px;
     }
     .result{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
