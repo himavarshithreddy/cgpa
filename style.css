@@ -158,3 +158,40 @@ border-radius: 3px;
 .celeb{
     display: none;
 }
+@media only screen and (max-width: 600px) {
+
+    .header{
+        height: 7%;
+    }
+    .head{
+        font-size: 18px;
+        margin: 0px 10px;
+    }
+    .sub{
+        width: 97%;
+    }
+    .subhead{
+        font-size: 12px;
+    }
+    .slider{
+        width: 150px;
+    }
+    .grade{
+        width: 50px;
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 0px;
+
+    }
+    .sharebtn{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    .rangevalue{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .result{
+        font-size: 20px;
+    }
+}
