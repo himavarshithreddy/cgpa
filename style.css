@@ -81,7 +81,7 @@ width: 380px;
 height: 8px;
 background: #04c47e;
 outline: none;
-margin-left: 10px;
+margin-left: 20px;
 
 }
 .slider::-webkit-slider-thumb {
@@ -164,7 +164,7 @@ border-radius: 3px;
     justify-content: center;
     width: auto;
     height: auto;
-   
+   line-height: 28px;
     position: absolute;
     top: 170%;
     padding: 40px;
@@ -214,8 +214,9 @@ border-radius: 3px;
         font-size: 30px;
     }
     .content{
-        top:80%;
-        font-size: 14px;
-        padding: 8px;
+        top:12%;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 12px;
     }
 }
