@@ -163,19 +163,22 @@ border-radius: 3px;
     .header{
         height: 7%;
     }
+    .main{
+        top:12%;
+    }
     .head{
         font-size: 22px;
         margin: 0px 10px;
     }
     .sub{
-        width: 95%;
+        width: 96%;
     }
     .subhead{
         font-size: 12px;
         margin: 0px 20px;
     }
     .slider{
-        width: 230px;
+        width: 210px;
     }
     .grade{
         width: 55px;
