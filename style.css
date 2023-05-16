@@ -1,0 +1,138 @@
+html{
+    width:100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+background-color: #333642;
+color: white;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #04c47e;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.main{
+    position: absolute  ;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.sub{
+    width: 60%;
+    height: auto;
+    background-color: #1d1e22;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.subhead{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin: 0px 80px;
+    font-family: 'Raleway', sans-serif;
+}
+.subhead2{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+}
+.cor{
+    width: 98%;
+    height: 55px;
+    justify-content: space-between;
+    margin: 10px 0px 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #8080805e;
+}
+.rangevalue{
+font-size: 20px;
+font-weight: 600;
+font-family: 'Raleway', sans-serif;
+padding-left: 20px;
+color: whitesmoke;
+}
+.slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+width: 380px;
+height: 8px;
+background: #04c47e;
+outline: none;
+margin-left: 10px;
+
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 15px;
+    height:15px;
+    background:white ;
+
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+label{
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grade{
+    width:60px;
+    height: 30px;
+    color: white;
+    background-color: #1d1e22;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 80px;
+    padding: 0px 10px;
+    border: 1px solid white;
+border-radius: 3px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.subbtn{
+    width: 140px;
+    height: 45px;
+    margin: 20px;
+    background-color: #04c47e;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+}
+.subbtn:hover{
+    border: 1px solid black;
+    background-color: #04c47ef0;
+}
+.sharebtn{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
