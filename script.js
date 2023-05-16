@@ -1,26 +1,4 @@
-document.querySelector('#shareBtn')
-.addEventListener('click', event => {
 
-    if (navigator.share) {
-        navigator.share({
-            title: 'SRM CGPA Calculator',
-
-            text: 'Calculate your CGPA using SRM CGPA Calculator',
-            url: 'https://srmcgpacalculator.netlify.app/'
-        }).then(() => {
-            console.log('Thanks for sharing!');
-        }).catch(err => {
-
-            console.log(
-            "Error while using Web share API:");
-            console.log(err);
-        });
-    } else {
-
-       
-        alert("Browser doesn't support this API !");
-    }
-})
 
 function result(){
     var c1=parseInt(document.getElementById("cor1").value);
