@@ -28,7 +28,7 @@ color: white;
 }
 .main{
     position: absolute  ;
-    top: 15%;
+    top: 18%;
     left: 0%;
     width: 100%;
     height: auto;
@@ -158,6 +158,20 @@ border-radius: 3px;
 .celeb{
     display: none;
 }
+.content{
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+   
+    position: absolute;
+    top: 170%;
+    padding: 40px;
+    font-size: 17px;
+    font-family:monospace;
+
+}
 @media only screen and (max-width: 600px) {
 
     .header{
@@ -179,7 +193,7 @@ border-radius: 3px;
     }
     .slider{
         width: 210px;
-        height:5px;
+        height: 5px;
     }
     .grade{
         width: 55px;
@@ -198,5 +212,10 @@ border-radius: 3px;
     }
     .result{
         font-size: 30px;
+    }
+    .content{
+        top:80%;
+        font-size: 14px;
+        padding: 8px;
     }
 }
