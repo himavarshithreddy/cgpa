@@ -561,59 +561,98 @@ body {
         padding: 12px;
     }
 
-    .course-num { width: 22px; font-size: 14px; }
+    .course-num { width: 22px; font-size: 14px; order: 1; }
 
     .course-name {
-        flex: 1 1 calc(100% - 42px);
-        order: 1;
+        flex: 1 1 calc(100% - 76px);
+        order: 2;
         font-size: 14px;
     }
 
-    .credit-stepper { order: 2; width: 110px; }
-    .grade { order: 3; width: 68px; }
-    .remove-btn { order: 4; width: 28px; height: 28px; }
+    .remove-btn { order: 3; width: 32px; height: 32px; }
+    /* margin-left aligns with course-name (past course-num 22px + gap 8px) */
+    .credit-stepper { order: 4; width: 120px; margin-left: 30px; }
+    .grade { order: 5; width: 80px; }
 }
 
 /* =============================== */
 /* ===== Mobile (max 480px) ====== */
 /* =============================== */
 @media only screen and (max-width: 480px) {
+    /* -- Header: compact single row -- */
     .header {
-        flex-wrap: wrap;
+        padding: 10px 14px;
         gap: 8px;
-        justify-content: center;
     }
 
-    .head { font-size: 20px; text-align: center; width: 100%; }
+    .head { font-size: 18px; white-space: nowrap; }
 
-    .header-actions { width: 100%; justify-content: center; }
+    /* -- Main layout -- */
+    .main { padding: 14px 10px 32px; gap: 16px; }
 
-    .main { padding: 16px 8px 32px; }
+    .calculator-card { padding: 16px 12px; border-radius: 12px; }
 
-    .calculator-card { padding: 16px 10px; border-radius: 12px; }
+    .card-title { font-size: 19px; }
+    .card-subtitle { font-size: 13px; }
+
+    /* -- Course rows: card-like with larger touch targets -- */
+    .course-list { gap: 10px; }
 
     .course-row {
-        padding: 10px 8px;
-        gap: 6px;
-        border-radius: 8px;
+        padding: 12px;
+        gap: 10px 8px;
+        border-radius: 10px;
+        border-color: var(--border);
     }
 
-    .course-name { font-size: 13px; }
+    .course-name {
+        font-size: 14px;
+        padding: 4px 0;
+    }
 
-    .credit-stepper { width: 100px; }
-    .step-btn { width: 28px; height: 30px; font-size: 16px; }
-    .credit-input { width: 40px; font-size: 15px; }
+    .credit-stepper {
+        width: auto;
+        flex: 1;
+        max-width: 160px;
+    }
 
-    .grade { width: 62px; height: 32px; font-size: 13px; }
+    .step-btn { width: 36px; height: 36px; font-size: 18px; }
+    .credit-input { flex: 1; font-size: 16px; }
 
-    .result-value { font-size: 42px; }
+    .grade {
+        width: auto;
+        flex: 1;
+        min-width: 70px;
+        height: 36px;
+        font-size: 14px;
+    }
 
-    .btn { font-size: 14px; padding: 9px 18px; }
+    .remove-btn { width: 32px; height: 32px; }
 
-    .btn-group { gap: 8px; }
+    /* -- Result -- */
+    .result-value { font-size: 44px; }
 
-    .info-card { padding: 16px; border-radius: 12px; }
+    /* -- Buttons: full-width stacked -- */
+    .btn { font-size: 15px; padding: 12px 20px; border-radius: 10px; }
 
+    .btn-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-group .btn { width: 100%; }
+
+    .course-actions { margin-top: 14px; }
+    .course-actions .btn { width: 100%; }
+
+    /* -- Info card -- */
+    .info-card { padding: 18px 14px; border-radius: 12px; }
+
+    /* -- Share -- */
     .sharebtn { padding: 8px 12px; font-size: 13px; }
     .sharebtn span { display: none; }
+
+    /* -- Grade chips -- */
+    .grade-chips { gap: 6px; }
+    .grade-chip { font-size: 13px; padding: 4px 10px; }
 }
