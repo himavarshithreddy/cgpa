@@ -66,6 +66,11 @@
                 </button>
             </div>
 
+            <div class="quick-tools" aria-label="Quick tools">
+                <button class="btn btn--secondary" id="loadSampleBtn" type="button">Load Sample Semester</button>
+                <button class="btn btn--secondary" id="copySummaryBtn" type="button">Copy Summary</button>
+            </div>
+
             <div class="btn-group">
                 <button class="btn btn--primary" id="calculateBtn" type="button">Calculate CGPA</button>
                 <button class="btn btn--ghost" id="resetBtn" type="button">Reset</button>
@@ -79,6 +84,8 @@
                     <p class="result-label">Your CGPA</p>
                     <p class="result-value" id="cgpaValue">0.00</p>
                     <p class="result-feedback" id="cgpaFeedback"></p>
+                    <div class="result-metrics" id="resultMetrics"></div>
+                    <div class="result-insight" id="resultInsight"></div>
                     <div id="cele" class="celeb"><img src="cel.gif" width="60" height="60" alt="Celebration"></div>
                 </div>
             </div>
